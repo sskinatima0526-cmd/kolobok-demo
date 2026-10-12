@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow" data-publish>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Народная столовая Колобок</title>
+<meta name="description" content="Колобок – народная столовая: свежие обеды для сотрудников, доставка по расписанию, собственное производство.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Podkova:wght@600;800&family=Golos+Text:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="demo-strip"><b>Демо-макет главной страницы.</b> Это не официальный сайт компании: цифры, отзывы, телефон и фото – заглушки.</div>
+
+<header class="bar" id="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Колобок – на главную">
+      <svg width="46" height="46" viewBox="0 0 100 100" aria-hidden="true">
+        <circle cx="50" cy="50" r="48" fill="#EBA83A"/>
+        <path d="M27 31q-7 17 3 35M46 22q-8 21 4 46M65 28q-7 17 3 31" stroke="#B87612" stroke-width="5.5" fill="none" stroke-linecap="round"/>
+      </svg>
+      <span><b>Колобок</b><small>народная столовая</small></span>
+    </a>
+    <nav id="nav" aria-label="Разделы сайта">
+      <a href="#menu">Меню</a>
+      <a href="#start">Как стать клиентом</a>
+      <a href="#partners">Партнёры</a>
+      <a href="#" data-soon="Банкеты">Банкеты</a>
+      <a href="#" data-soon="Филиалы">Филиалы</a>
+      <a href="#" data-soon="Вакансии">Вакансии</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <span class="bar-phone">+7 (___) ___-__-__</span>
+    <button class="btn btn-pine btn-sm" type="button" data-open-lead>Связаться</button>
+    <button class="burger" type="button" aria-expanded="false" aria-controls="nav" aria-label="Открыть меню"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <h1>Комплексное питание для вашей команды</h1>
+        <p class="lead">Свежие обеды, доставка по расписанию и собственное производство. Заботимся о вашем коллективе каждый день.</p>
+        <div class="hero-cta">
+          <button class="btn btn-gold" type="button" data-open-lead>Начать сотрудничество</button>
+          <a class="btn btn-line" href="#menu">Смотреть меню</a>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <svg class="sun" viewBox="0 0 100 100"><circle cx="50" cy="50" r="50" fill="#EBA83A"/><path d="M24 26q-8 22 4 44M44 14q-9 28 5 58M66 22q-8 24 4 46" stroke="#C98312" stroke-width="3.4" fill="none" stroke-linecap="round"/></svg>
+        <div class="tray" id="heroTray"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="week" id="menu">
+    <div class="wrap">
+      <div class="week-panel">
+        <div class="week-head">
+          <div>
+            <h2>На этой неделе</h2>
+            <p>Сбалансированные обеды от шеф-повара</p>
+          </div>
+        </div>
+        <div class="days" role="tablist" aria-label="День недели" id="days"></div>
+        <div class="week-body">
+          <div class="tray" id="weekTray" role="img" aria-label="Обед выбранного дня на подносе"></div>
+          <dl class="dishes" id="dishes" aria-live="polite"></dl>
+        </div>
+        <div class="week-foot">
+          <p>Пример меню. Настоящее меню на неделю подставим из вашего файла.</p>
+          <button class="btn btn-ghost" type="button" data-soon="Файл меню в PDF">Скачать меню в PDF</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="steps" id="start">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Как стать клиентом</h2>
+        <p>Всего несколько шагов, и мы начнём кормить вашу команду.</p>
+      </div>
+      <ol class="talons">
+        <li class="talon"><div class="stub"><span class="num">1</span></div><h3>Оставьте заявку</h3><p>Расскажите о задачах, мы предложим меню.</p></li>
+        <li class="talon"><div class="stub"><span class="num">2</span></div><h3>Согласуем детали</h3><p>Обсудим меню, график и стоимость.</p></li>
+        <li class="talon"><div class="stub"><span class="num">3</span></div><h3>Запускаем поставки</h3><p>Каждый день свежие обеды к нужному времени.</p></li>
+        <li class="talon"><div class="stub"><span class="num">4</span></div><h3>Получайте отчёт</h3><p>Присылаем отчёт и собираем обратную связь.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="proof" id="partners">
+    <div class="wrap">
+      <div class="proof-panel">
+        <h2>Наши партнёры</h2>
+        <p class="sub">Компании, которые уже обедают у нас.</p>
+        <div class="logos" aria-label="Место под логотипы партнёров">
+          <div class="slot">Логотип партнёра</div><div class="slot">Логотип партнёра</div><div class="slot">Логотип партнёра</div>
+          <div class="slot">Логотип партнёра</div><div class="slot">Логотип партнёра</div><div class="slot">Логотип партнёра</div>
+        </div>
+        <ul class="facts">
+          <li><b>00</b><span>лет на рынке</span></li>
+          <li><b>000</b><span>компаний-клиентов</span></li>
+          <li><b>0 000</b><span>обедов в день</span></li>
+          <li><b>00%</b><span>довольных клиентов</span></li>
+        </ul>
+        <div class="reviews" aria-label="Место под отзывы клиентов">
+          <div class="review"><div class="ava"></div><i></i><i></i><i></i></div>
+          <div class="review"><div class="ava"></div><i></i><i></i><i></i></div>
+          <div class="review"><div class="ava"></div><i></i><i></i><i></i></div>
+        </div>
+        <p class="proof-note">Логотипы, цифры и отзывы подставим настоящие, после подтверждения от вас.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="wrap">
+      <div class="about-art" id="potArt" role="img" aria-label="Кастрюля с супом и половником"></div>
+      <div>
+        <h2>Готовим как для себя</h2>
+        <p>Колобок – сеть столовых с собственным производством. Готовим по домашним рецептам из свежих продуктов и следим за качеством на каждом этапе: от закупки до подачи на стол.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="perks">
+    <div class="wrap">
+      <div class="intro">
+        <h2>Наши преимущества</h2>
+        <p>Всё продумано для вашего комфорта.</p>
+      </div>
+      <ul class="leaders">
+        <li><b>Собственная кухня</b><i></i><span>Готовим сами, под график вашей команды</span></li>
+        <li><b>Сезонные продукты</b><i></i><span>Берём свежее и по сезону</span></li>
+        <li><b>Доставка по графику</b><i></i><span>Привозим к назначенному времени</span></li>
+        <li><b>Персональный менеджер</b><i></i><span>Один контакт по всем вопросам</span></li>
+        <li><b>Контроль качества</b><i></i><span>Проверяем на каждом этапе</span></li>
+        <li><b>Гибкие условия</b><i></i><span>Подстраиваемся под вашу команду</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="wrap">
+      <div class="cta-box on-gold">
+        <svg class="cta-bun" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="50" fill="#F4BC5B"/><path d="M24 26q-8 22 4 44M44 14q-9 28 5 58M66 22q-8 24 4 46" stroke="#C98312" stroke-width="3" fill="none" stroke-linecap="round"/></svg>
+        <h2>Готовы начать?</h2>
+        <p>Получите персональное предложение за 15 минут.</p>
+        <button class="btn btn-pine" type="button" data-open-lead>Оставить заявку</button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot" id="contacts">
+  <div class="wrap">
+    <div class="grid">
+      <div>
+        <a class="logo" href="#top" aria-label="Колобок – наверх">
+          <svg width="44" height="44" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="48" fill="#EBA83A"/><path d="M27 31q-7 17 3 35M46 22q-8 21 4 46M65 28q-7 17 3 31" stroke="#B87612" stroke-width="5.5" fill="none" stroke-linecap="round"/></svg>
+          <span><b>Колобок</b><small>народная столовая</small></span>
+        </a>
+        <p>Комплексное питание для компаний и коллективов.</p>
+      </div>
+      <div>
+        <h4>Разделы</h4>
+        <a href="#menu">Меню</a>
+        <a href="#start">Как стать клиентом</a>
+        <a href="#partners">Партнёры</a>
+        <a href="#" data-soon="Банкеты">Банкеты</a>
+        <a href="#" data-soon="Вакансии">Вакансии</a>
+      </div>
+      <div>
+        <h4>Адреса</h4>
+        <a href="#" data-soon="Филиалы">Все точки сети</a>
+      </div>
+      <div>
+        <h4>Контакты</h4>
+        <a href="#">+7 (___) ___-__-__</a>
+        <a href="#">______@______.ru</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© Колобок, 2026</span>
+      <a href="#" data-soon="Политика конфиденциальности">Политика конфиденциальности</a>
+    </div>
+  </div>
+</footer>
+
+<dialog id="lead" aria-labelledby="leadTitle">
+  <button class="close" type="button" aria-label="Закрыть" data-close>&times;</button>
+  <h2 id="leadTitle">Забронируйте обеды</h2>
+  <p class="sub">Мы свяжемся с вами в течение 15 минут.</p>
+  <form id="leadForm" novalidate>
+    <label for="f-name">Ваше имя</label>
+    <input id="f-name" name="name" type="text" autocomplete="name" placeholder="Иван Иванов" required>
+    <label for="f-phone">Телефон</label>
+    <input id="f-phone" name="phone" type="tel" autocomplete="tel" placeholder="+7 (___) ___-__-__" required>
+    <label for="f-mail">E-mail</label>
+    <input id="f-mail" name="email" type="email" autocomplete="email" placeholder="example@mail.ru">
+    <label for="f-staff">Количество сотрудников</label>
+    <input id="f-staff" name="staff" type="number" min="1" inputmode="numeric" placeholder="Например, 25">
+    <button class="btn btn-gold on-gold" type="submit">Отправить заявку</button>
+    <p class="legal">Нажимая на кнопку, вы соглашаетесь с политикой конфиденциальности.</p>
+  </form>
+  <p class="thanks" id="thanks">Спасибо, заявка принята. Это демо: форма пока не подключена, данные никуда не отправляются.</p>
+</dialog>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
